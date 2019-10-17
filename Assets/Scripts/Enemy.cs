@@ -23,13 +23,16 @@ public class Enemy : MonoBehaviour
     {
         if (Targetpoint.Length == index)//return在这里之后，就不执行之后的内容了，直接返回
         {
+            Destroy(gameObject);
             return;
+          
         }
         transform.Translate((Targetpoint[index].position - transform.position).normalized * Time.deltaTime * speed);
         if (Vector3.Distance(Targetpoint[index].position,transform.position)<0.2f)
         {
             index++;
         }
+        
         
         
     }
