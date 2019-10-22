@@ -83,7 +83,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 0
 --- !u!114 &1536283624157410054
 MonoBehaviour:
@@ -98,6 +98,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: []
+  time: 0
+  timeRate: 0
+  bullet: {fileID: 7885998836704118053, guid: 199c2f1109b4df341a208755b50b608b, type: 3}
+  fireTransform: {fileID: 0}
 --- !u!1 &4472453859197169018
 GameObject:
   m_ObjectHideFlags: 0

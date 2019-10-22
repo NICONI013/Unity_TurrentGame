@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     private Transform[] Targetpoint;
     private int index = 0;
     public float speed = 10;
+
+    
+    public int HP=10;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,7 @@ public class Enemy : MonoBehaviour
     {
         if (Targetpoint.Length == index)//return在这里之后，就不执行之后的内容了，直接返回
         {
-            Destroy(gameObject);
+            
             return;
           
         }
@@ -32,8 +35,24 @@ public class Enemy : MonoBehaviour
         {
             index++;
         }
-        
-        
+        if (index>Targetpoint.Length-1)
+        {
+            ReachDestiny();
+        }
         
     }
+    private void OnDestroy()//被击毁
+    {
+        Spawner.EnemyAlive--;
+    }
+    void ReachDestiny()//到达目的地
+    {
+        Destroy(gameObject);
+    }
+    public void TakeDamange(int damange)
+    {
+        HP -= damange;
+        print(HP);
+    }
+   
 }

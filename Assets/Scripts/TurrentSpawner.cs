@@ -22,7 +22,7 @@ public class TurrentSpawner : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))//鼠标左键按下
+        if ( Input.GetMouseButtonDown(0))//鼠标左键按下
         {
             if (EventSystem.current.IsPointerOverGameObject() == false)//这里的Gameobject是UI上的游戏物体，意为当前碰到的不是UI上的游戏物体
             {
@@ -34,9 +34,9 @@ public class TurrentSpawner : MonoBehaviour
                 if (iscolliion)
                 {
                     MapCube mapcube = hit.collider.gameObject.GetComponent<MapCube>();//碰撞到的那个方块，获取上面的Mapcube组件
-                    if (mapcube.TurrentOn == null)
+                    if (CurrentTurrent.Turrent != null && mapcube.TurrentOn == null)
                     {
-                        //上面没有炮台
+                        //上面没有炮台//当前炮台游戏物体不为空的前提下
                         if (CurrentMoney > CurrentTurrent.Moneycost)
                         {
                             OnMoneyChanged(CurrentTurrent.Moneycost);
@@ -48,7 +48,7 @@ public class TurrentSpawner : MonoBehaviour
                         }
 
                     }
-                    else
+                    else if(mapcube.TurrentOn!=null)
                     {
                         //有了炮台需要升级
                     }

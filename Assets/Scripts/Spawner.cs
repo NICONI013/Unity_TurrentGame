@@ -7,7 +7,9 @@ public class Spawner:MonoBehaviour
     public EnemyState[] enemystats;
     public Transform startpos;
     public int spawnrate;
+    public static int EnemyAlive = 0;
     private GameObject gb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,13 @@ public class Spawner:MonoBehaviour
             {
                 gb=  GameObject.Instantiate(states.EnemyType, startpos.position, Quaternion.identity);
                 yield return new WaitForSeconds(states.rate);
-                
+                EnemyAlive++;
                 
                
+            }
+            while (EnemyAlive >0)
+            {
+                yield return 0;
             }
             yield return new WaitForSeconds(spawnrate);
         }
