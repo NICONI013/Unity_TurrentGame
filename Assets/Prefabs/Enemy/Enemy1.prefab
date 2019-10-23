@@ -107,6 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   HP: 10
+  EnemyDieParticle: {fileID: 371393062198065146, guid: 552acbf8db35ab4458ac31c209b019aa,
+    type: 3}
 --- !u!54 &-6921777942918899183
 Rigidbody:
   m_ObjectHideFlags: 0

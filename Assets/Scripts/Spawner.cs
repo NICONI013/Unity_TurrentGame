@@ -32,6 +32,7 @@ public class Spawner:MonoBehaviour
                 yield return new WaitForSeconds(states.rate);
                 EnemyAlive++;
                 
+                
                
             }
             while (EnemyAlive >0)

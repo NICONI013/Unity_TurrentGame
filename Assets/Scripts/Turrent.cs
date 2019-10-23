@@ -22,7 +22,7 @@ public class Turrent : MonoBehaviour
     {
         
             timer += Time.deltaTime;//计时器，一直增加时间，比如12345,
-            print(timer);
+           
             if (Enemy.Count > 0 && timer >= timeRate)
             {
 
@@ -52,13 +52,35 @@ public class Turrent : MonoBehaviour
     }
     void Attack()
     {
-        
-        GameObject bt = Instantiate(bullet, fireTransform.position, fireTransform.rotation);//生成子弹gameobject
-        if (Enemy[0]!=null)
+        if (Enemy[0]==null)
         {
-            bt.GetComponent<Bullet>().Shoot(Enemy[0].transform);//射击list中第一号敌人，只是给了个目标而已，生成子弹之后子弹unpdate中自己写了像目标移动
+            UpdateList();
         }
-            
+        if (Enemy.Count>0)
+        {
+            GameObject bt = Instantiate(bullet, fireTransform.position, fireTransform.rotation);//生成子弹gameobject
+            bt.GetComponent<Bullet>().LookTransform(Enemy[0].transform);//射击list中第一号敌人，只是给了个目标而已，生成子弹之后子弹unpdate中自己写了像目标移动
+        }
+        else
+        {
+            timer = timeRate;
+        }
+       
         
+    }
+    void UpdateList()
+    {
+        List<int> Emptyindex = new List<int>();//新建集合，目的是移除List中被摧毁，剩下null的游戏物体
+        for (int i = 0; i < Enemy.Count; i++)//for循环
+        {
+            if (Enemy[i]==null)//找出List中哪个元素为空值
+            {
+                Emptyindex.Add(i);//把元素的序号添加进新建的List集合
+            }
+        }
+        for (int i = 0; i < Emptyindex.Count; i++)//再次循环
+        {
+            Enemy.RemoveAt(Emptyindex[i]-i);//移除空物体，特别说一下是I-i
+        }
     }
 }

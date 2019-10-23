@@ -7,9 +7,9 @@ public class Enemy : MonoBehaviour
     private Transform[] Targetpoint;
     private int index = 0;
     public float speed = 10;
-
     
     public int HP=10;
+    public GameObject EnemyDieParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +52,16 @@ public class Enemy : MonoBehaviour
     public void TakeDamange(int damange)
     {
         HP -= damange;
-        print(HP);
+        print(HP+gameObject.name);
+        if (HP<=0)
+        {
+            Die();
+        }
+    }
+    public void Die()
+    {
+        Destroy(gameObject);
+        Instantiate(EnemyDieParticle, transform.position, Quaternion.identity);
     }
    
 }

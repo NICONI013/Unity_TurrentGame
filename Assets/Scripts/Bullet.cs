@@ -33,7 +33,7 @@ public class Bullet : MonoBehaviour
         
        
     }
-    public void Shoot(Transform target)//方法中传递一个坐标进来，把坐标赋值过来，在炮台那里调用
+    public void LookTransform(Transform target)//方法中传递一个坐标进来，把坐标赋值过来，在炮台那里调用
     {
         this.targettf = target;
        
@@ -47,9 +47,11 @@ public class Bullet : MonoBehaviour
     {
         if (cld.tag=="Enemy")
         {
+           
             cld.gameObject.GetComponent<Enemy>().TakeDamange(damanger);
             Instantiate(hitParitcle, transform.position, transform.rotation);
             Destroy(gameObject);
+            
         }
         
     }
