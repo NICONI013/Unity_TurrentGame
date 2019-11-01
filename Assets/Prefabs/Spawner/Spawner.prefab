@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7522115038853229350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7522115038853229353}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7522115038853229353
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522115038853229350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 106.7006, y: 155.21194, z: -12.28125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7522115039428103719}
+  - {fileID: 7522115039107366939}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7522115039107366937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7522115039107366939}
+  - component: {fileID: 7522115039107366936}
+  m_Layer: 0
+  m_Name: TurrentSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7522115039107366939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522115039107366937}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.556946, y: -39.899925, z: -9.59375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7522115038853229353}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7522115039107366936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522115039107366937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8555f20e69bcc4849aa225cb14c013e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClassicTurrent:
+    Turrent: {fileID: 225820255666408038, guid: ac983eadfecade343b7cb5b80fdad226,
+      type: 3}
+    Moneycost: 80
+    TurrentUpdate: {fileID: 7829793393131593098, guid: 8d7d20dd6a615e04aab9643aa5b930b5,
+      type: 3}
+    MoneyUpdateCost: 75
+    type: 0
+  LaserTurrent:
+    Turrent: {fileID: 8689645935394016372, guid: ba5a1ce4d338fd64aae0f150aa60804f,
+      type: 3}
+    Moneycost: 100
+    TurrentUpdate: {fileID: 5197721153557973570, guid: 1816d28eee6c27644a37d3cd38d7a4d2,
+      type: 3}
+    MoneyUpdateCost: 85
+    type: 1
+  FireTurrent:
+    Turrent: {fileID: 4472453859197169016, guid: d2bbcf2a80dfbe54e8d1f0e6c7ba2d7f,
+      type: 3}
+    Moneycost: 120
+    TurrentUpdate: {fileID: 2723114661460936902, guid: 0857bc7319a7c9644a5291e4c82ee1b4,
+      type: 3}
+    MoneyUpdateCost: 95
+    type: 2
+  CurrentTurrent:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
+  CurrentMoney: 10000
+  MoneyText: {fileID: 0}
+  Chooseon: 0
+--- !u!1 &7522115039428103717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7522115039428103719}
+  - component: {fileID: 7522115039428103716}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7522115039428103719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522115039428103717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -120.7006, y: -153.21194, z: 28.28125}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 7522115038853229353}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7522115039428103716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7522115039428103717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4a7edb7808f114ab4dccbf705d2530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemystats:
+  - EnemyType: {fileID: 6801288845234796026, guid: ef8721afb4d1374419dc4326df8dde12,
+      type: 3}
+    num: 5
+    rate: 0.3
+  - EnemyType: {fileID: 6801288845234796026, guid: ac49eed2a4c8d2b4e993f9940596f3a4,
+      type: 3}
+    num: 5
+    rate: 1
+  startpos: {fileID: 7522115039428103719}
+  spawnrate: 3

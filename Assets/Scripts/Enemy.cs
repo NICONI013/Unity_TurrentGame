@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,17 +11,20 @@ public class Enemy : MonoBehaviour
     
     public int HP=10;
     public GameObject EnemyDieParticle;
+
+    private Slider sld;
     // Start is called before the first frame update
     void Start()
     {
         Targetpoint = Movecontrol.Targetpoint;
-        
+        sld = GetComponentInChildren<Slider>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+        sld.value = HP * 0.1f;
     }
     private void Move()
     {
@@ -63,5 +67,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         Instantiate(EnemyDieParticle, transform.position, Quaternion.identity);
     }
+   
    
 }

@@ -14,6 +14,16 @@ public class TurrentSpawner : MonoBehaviour
     
     public int CurrentMoney;
     public Text MoneyText;
+
+    public bool Chooseon = false;
+
+    public GameObject UpdateCanvas;
+    public Button BuildBtns;
+    private GameObject SelecedTurrent;//表示当前选择的炮台
+
+    Ray ray;
+    RaycastHit hit;
+    MapCube mapcube;
     void OnMoneyChanged(int change)
     {
         CurrentMoney -= change;
@@ -21,6 +31,9 @@ public class TurrentSpawner : MonoBehaviour
     }
     private void Update()
     {
+         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+         
 
         if ( Input.GetMouseButtonDown(0))//鼠标左键按下
         {
@@ -28,12 +41,12 @@ public class TurrentSpawner : MonoBehaviour
             {
                 
                 //满足以上2种条件才可建造炮台
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
+
                 bool iscolliion = Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("SpaceCube"));//只检测这个图层下的游戏物体
                 if (iscolliion)
                 {
-                    MapCube mapcube = hit.collider.gameObject.GetComponent<MapCube>();//碰撞到的那个方块，获取上面的Mapcube组件
+                    //碰撞到的那个方块，获取上面的Mapcube组件
+                    mapcube = hit.collider.gameObject.GetComponent<MapCube>();
                     if (CurrentTurrent.Turrent != null && mapcube.TurrentOn == null)
                     {
                         //上面没有炮台//当前炮台游戏物体不为空的前提下
@@ -41,6 +54,7 @@ public class TurrentSpawner : MonoBehaviour
                         {
                             OnMoneyChanged(CurrentTurrent.Moneycost);
                             mapcube.BulidPrefabs(CurrentTurrent.Turrent);
+                            CanvasHide();
                         }
                         else
                         {
@@ -50,7 +64,16 @@ public class TurrentSpawner : MonoBehaviour
                     }
                     else if(mapcube.TurrentOn!=null)
                     {
-                        //有了炮台需要升级
+                        
+                        //mapcube.BuildUpdateButton();
+                        CanvasOn(mapcube.transform.position+new Vector3(0,10,0), mapcube.isUpdate);//获取点击小方块的坐标，如果生成了炮台isuodate为true，按钮可以点击
+                       
+                        if (mapcube.TurrentOn == SelecedTurrent&& UpdateCanvas.activeInHierarchy)//此按钮在层级列表中是否激活
+                        {
+                            CanvasHide();
+                            
+                        }
+                        SelecedTurrent = mapcube.TurrentOn;//保存下来的炮台，通过mapcube生成的游戏物体赋值
                     }
                 }
 
@@ -69,5 +92,38 @@ public class TurrentSpawner : MonoBehaviour
     {
         CurrentTurrent = FireTurrent;
     }
+    //public void UpdateTurrentBtn()
+    //{
+    //    Destroy(mapcube.TurrentOn);
+    //    if (CurrentTurrent==ClassicTurrent)
+    //    {
+    //        mapcube.BulidPrefabs(ClassicTurrent.Turrent);
+    //    }
+    //    if (CurrentTurrent==LaserTurrent)
+    //    {
+    //        mapcube.BulidPrefabs(LaserTurrent.Turrent);
+    //    }
+    //    if (CurrentTurrent==FireTurrent)
+    //    {
+    //        mapcube.BulidPrefabs(FireTurrent.Turrent);
+    //    }
+    //    //Destroy(mapcube.BuildBtns);
+    //}
+    //public void DestoryTurrentBtn()
+    //{
+    //    Destroy(mapcube.TurrentOn);
+    //    Destroy(mapcube.BuildBtns);
+    //}///失败的例子
+    void CanvasOn(Vector3 pos, bool isDisableUpdate=false)//此处传递位置坐标信息，把坐标传递进来，因为mapcube需要raycast hit检测是哪个方块，所以这么调用
+    {
+        UpdateCanvas.SetActive(true);
+        UpdateCanvas.transform.position = pos;
+        BuildBtns.interactable = !isDisableUpdate;//此为按钮的可互动性
+    }
+    void CanvasHide()
+    {
+        UpdateCanvas.SetActive(false);
+    }
     
+   
 }
