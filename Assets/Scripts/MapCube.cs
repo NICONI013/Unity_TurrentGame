@@ -16,32 +16,41 @@ public class MapCube : MonoBehaviour
     public bool isUpdate = false;
     //public GameObject UpdateBtns;
     //public GameObject BuildBtns;
+
+    public TurrentData Turrentdata;
     private void Start()
     {
         M1 = GetComponent<Renderer>().material;
         Tuspr = GameObject.Find("TurrentSpawner").GetComponent<TurrentSpawner>();
     }
-    public void BulidPrefabs(GameObject TurrentPrefabs)
+    public void BulidPrefabs(TurrentData turrentData)//在小方块上建造炮台
     {
         isUpdate = false;
-        TurrentOn = Instantiate(TurrentPrefabs, transform.position+new Vector3(0,1,0), Quaternion.identity);
+        TurrentOn = Instantiate(turrentData.Turrent, transform.position+new Vector3(0,1,0), Quaternion.identity);
         Instantiate(DustParticle, transform.position, Quaternion.identity);
+        this.Turrentdata = turrentData;
+    }
+    public void UpdateTurrent()//更新小方块的炮台，因为TurrentData中选择了可以更新的炮台类型，所以直接点CurrentTurrent.Update即可
+    {
+        isUpdate = true;
+        TurrentOn = Instantiate(Turrentdata.TurrentUpdate, transform.position + new Vector3(0, 1, 0), Quaternion.identity);
+        Instantiate(DustParticle, transform.position, Quaternion.identity);
+
+
+    }
+    public void DestoryTurrent()
+    {
+        Destroy(TurrentOn);
+        isUpdate = false;
+        //TurrentOn = null;
+        //Turrentdata = null;
+
     }
     //public void BuildUpdateButton()
     //{
     //    BuildBtns= Instantiate(UpdateBtns, transform.position+new Vector3(0,6,0), transform.rotation);
     //}
-    public void OnupdateTurrentBtn()
-    {
-
-        Destroy(TurrentOn);
-
-
-    }
-    public void OnDestoryBtn()
-    {
-        Destroy(TurrentOn);
-    }
+   
 
     private void OnMouseEnter()
     {

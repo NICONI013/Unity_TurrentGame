@@ -21,6 +21,8 @@ public class TurrentSpawner : MonoBehaviour
     public Button BuildBtns;
     private GameObject SelecedTurrent;//表示当前选择的炮台
 
+    public MapCube Mapcube;
+
     Ray ray;
     RaycastHit hit;
     MapCube mapcube;
@@ -47,13 +49,17 @@ public class TurrentSpawner : MonoBehaviour
                 {
                     //碰撞到的那个方块，获取上面的Mapcube组件
                     mapcube = hit.collider.gameObject.GetComponent<MapCube>();
+
+                    Mapcube = mapcube;//之前一直不知道怎么在下面的方法中得到选中的小方块，想不到这么简单！！！！！！！！
+                    //直接在上面public一个mapcube然后把这个值赋给它就可以在下面调用了
+
                     if (CurrentTurrent.Turrent != null && mapcube.TurrentOn == null)
                     {
                         //上面没有炮台//当前炮台游戏物体不为空的前提下
                         if (CurrentMoney > CurrentTurrent.Moneycost)
                         {
                             OnMoneyChanged(CurrentTurrent.Moneycost);
-                            mapcube.BulidPrefabs(CurrentTurrent.Turrent);
+                            mapcube.BulidPrefabs(CurrentTurrent);
                             CanvasHide();
                         }
                         else
@@ -74,6 +80,7 @@ public class TurrentSpawner : MonoBehaviour
                             
                         }
                         SelecedTurrent = mapcube.TurrentOn;//保存下来的炮台，通过mapcube生成的游戏物体赋值
+                        CurrentTurrent = mapcube.Turrentdata;
                     }
                 }
 
@@ -118,12 +125,26 @@ public class TurrentSpawner : MonoBehaviour
     {
         UpdateCanvas.SetActive(true);
         UpdateCanvas.transform.position = pos;
-        BuildBtns.interactable = !isDisableUpdate;//此为按钮的可互动性
+        BuildBtns.interactable =! isDisableUpdate;//此为按钮的可互动性
     }
     void CanvasHide()
     {
         UpdateCanvas.SetActive(false);
     }
-    
-   
+    public void OnupdateTurrentBtn()
+    {
+       
+        Destroy(mapcube.TurrentOn);
+        mapcube.UpdateTurrent();
+        CanvasHide();
+
+    }
+    public void OnDestoryBtn()
+    {
+        //mapcube.TurrentOn = null;
+        //mapcube.Turrentdata = null;
+        mapcube.DestoryTurrent();
+        CanvasHide();
+    }
+
 }

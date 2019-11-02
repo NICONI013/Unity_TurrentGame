@@ -421,6 +421,7 @@ Transform:
   - {fileID: 7829793393131159968}
   - {fileID: 7829793393131159974}
   - {fileID: 7829793393131159976}
+  - {fileID: 3949232794922710705}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -485,7 +486,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: []
-  time: 0
-  timeRate: 0
+  timer: 0
+  timeRate: 1
   bullet: {fileID: 7885998836704118053, guid: 199c2f1109b4df341a208755b50b608b, type: 3}
-  fireTransform: {fileID: 0}
+  fireTransform: {fileID: 3949232794922710705}
+--- !u!1 &7988949092329002782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3949232794922710705}
+  m_Layer: 0
+  m_Name: FirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3949232794922710705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988949092329002782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.746, z: 0.555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7829793393131159978}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
