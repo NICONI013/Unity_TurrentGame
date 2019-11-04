@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     private int index = 0;
     public float speed = 10;
     
-    public int HP=10;
+    public float HP=10;
     public GameObject EnemyDieParticle;
 
     private Slider sld;
@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    public void TakeDamange(int damange)
+    public void TakeDamange(float damange)
     {
         HP -= damange;
         print(HP+gameObject.name);
@@ -62,6 +62,7 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
+    
     public void Die()
     {
         Destroy(gameObject);

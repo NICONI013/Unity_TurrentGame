@@ -12,20 +12,35 @@ public class Turrent : MonoBehaviour
     public GameObject bullet;
     public Transform fireTransform;
     private Transform TurrentHead;
+
+    public bool isLaser = false;
+    private LineRenderer lineRender;
     // Start is called before the first frame update
     void Start()
     {
         timer = timeRate;
         TurrentHead = transform.Find("Head").transform;
+        if (isLaser==true)
+        {
+            lineRender = transform.Find("LineRender").GetComponent<LineRenderer>();
+
+        }
+        
     }
     
     // Update is called once per frame
     void Update()
     {
-        
-
         timer += Time.deltaTime;//计时器，一直增加时间，比如12345,
-           
+        if (Enemy.Count > 0 && Enemy[0] != null)
+        {
+            Transform transformtarget = Enemy[0].transform;
+            transform.position = new Vector3(transform.position.x, transformtarget.position.y - 1, transform.position.z);
+
+            TurrentHead.LookAt(Enemy[0].transform);
+        }
+        if (isLaser==false)
+        {
             if (Enemy.Count > 0 && timer >= timeRate)
             {
 
@@ -33,14 +48,21 @@ public class Turrent : MonoBehaviour
                 timer = 0;//直接归零，简单方便
                 Attack();
             }
-
-        if (Enemy.Count>0&&Enemy[0]!=null)
-        {
-            Transform transformtarget = Enemy[0].transform;
-            transform.position = new Vector3(transform.position.x, transformtarget.position.y-1, transform.position.z);
-            
-            TurrentHead.LookAt(Enemy[0].transform);
         }
+        if (isLaser == true )
+        {
+            if (Enemy.Count > 0 && timer >= timeRate)
+            {
+                lineRender.enabled = true;
+                LaserAttack();
+
+            }
+            if (Enemy.Count <= 0)
+            {
+                lineRender.enabled = false;
+            }
+        }
+       
         
 
     }
@@ -60,7 +82,7 @@ public class Turrent : MonoBehaviour
         }
        
     }
-    void Attack()
+    void Attack()//普通炮台的攻击
     {
         if (Enemy[0]==null)
         {
@@ -80,6 +102,37 @@ public class Turrent : MonoBehaviour
        
         
     }
+    void LaserAttack()//镭射炮台的攻击
+    {
+        
+        if (Enemy[0] == null)
+        {
+            UpdateList();
+        }
+        if (Enemy.Count > 0)
+        {
+
+           
+
+            //以下是设置两点链接，也可用
+            //lineRender.SetPosition(0, fireTransform.position);
+            //lineRender.SetPosition(1, Enemy[0].transform.position);
+
+           
+            //此为设置数组
+            lineRender.SetPositions(new Vector3[] { fireTransform.position, Enemy[0].transform.position });
+            float t = Time.deltaTime * 2;
+
+            Enemy[0].GetComponent<Enemy>().TakeDamange(t);
+
+            //lineRender.enabled = true;
+            //yield return new WaitForSeconds(0.1f);
+            //lineRender.enabled = false;
+        }
+
+
+    }
+
     void UpdateList()
     {
         List<int> Emptyindex = new List<int>();//新建集合，目的是移除List中被摧毁，剩下null的游戏物体

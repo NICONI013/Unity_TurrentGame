@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [HideInInspector]
     public Transform targettf;
     public float speed = 10;
     public int damanger = 1;

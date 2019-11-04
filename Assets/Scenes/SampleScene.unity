@@ -228,6 +228,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &5033077
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +342,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &28753764
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +630,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &143845244
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +823,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &170679065
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +937,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &176404927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1051,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &182433307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1165,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &192557645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,6 +1279,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &217714330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1393,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &235801804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1673,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &392299304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,6 +1883,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &461685490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,6 +1997,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &523171422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2487,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &594711067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,6 +2601,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &601333280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2790,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &633331747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,6 +2904,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &636683140
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,6 +3262,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &666151545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3376,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &674584155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,6 +3490,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,6 +3695,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &757183588
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,6 +3809,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &805651855
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,6 +3923,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &825398117
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,6 +4037,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &833296006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,6 +4151,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &849899284
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,6 +4430,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &884047171
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,6 +4716,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &930207909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,6 +4830,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &945828324 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3296429754969764749, guid: 98ed7583682b0c6479e7e0851fd73856,
@@ -4935,6 +5097,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &989841086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,6 +5211,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1002850571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5151,6 +5325,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1005436473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5259,6 +5439,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1006870307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5397,6 +5583,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1026287849
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,6 +5788,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1048176302
 GameObject:
   m_ObjectHideFlags: 0
@@ -5704,6 +5902,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1061577262
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,6 +6016,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1080471971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,6 +6526,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1230219149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,6 +6640,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1258616778
 GameObject:
   m_ObjectHideFlags: 0
@@ -6707,6 +6929,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1340387559
 GameObject:
   m_ObjectHideFlags: 0
@@ -6815,6 +7043,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1345681935
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,6 +7207,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1397833268
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7321,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1407824975
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,6 +7533,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1445821933
 GameObject:
   m_ObjectHideFlags: 0
@@ -7425,6 +7677,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1472043119
 GameObject:
   m_ObjectHideFlags: 0
@@ -7533,6 +7791,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1498207104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7728,6 +7992,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1531790547
 GameObject:
   m_ObjectHideFlags: 0
@@ -7836,6 +8106,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1563684478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5228796519942326658, guid: d25d5c6047cf3354781dd11aeb55b907,
@@ -7858,6 +8134,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1642179628
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,6 +8248,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1658444875
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,6 +8362,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1661388581
 GameObject:
   m_ObjectHideFlags: 0
@@ -8182,6 +8476,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1665894319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8290,6 +8590,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1667269331
 GameObject:
   m_ObjectHideFlags: 0
@@ -8473,6 +8779,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1689889781
 GameObject:
   m_ObjectHideFlags: 0
@@ -8737,6 +9049,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1726326319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8845,6 +9163,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1742234817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3296429755340422120, guid: 98ed7583682b0c6479e7e0851fd73856,
@@ -8978,6 +9302,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!4 &1792957903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5228796519942326659, guid: d25d5c6047cf3354781dd11aeb55b907,
@@ -9092,6 +9422,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1830522159
 GameObject:
   m_ObjectHideFlags: 0
@@ -9200,6 +9536,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1838712692
 GameObject:
   m_ObjectHideFlags: 0
@@ -9308,6 +9650,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1880945442
 GameObject:
   m_ObjectHideFlags: 0
@@ -9605,6 +9953,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1951236565
 GameObject:
   m_ObjectHideFlags: 0
@@ -9713,6 +10067,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1951376082
 GameObject:
   m_ObjectHideFlags: 0
@@ -9821,6 +10181,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &1982767878
 GameObject:
   m_ObjectHideFlags: 0
@@ -10050,6 +10416,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &2061951387
 GameObject:
   m_ObjectHideFlags: 0
@@ -10226,6 +10598,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1 &2100009009
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,6 +10712,12 @@ MonoBehaviour:
   DustParticle: {fileID: 4304688150988831805, guid: 88878f848cb461a418094d057f5b49c5,
     type: 3}
   isUpdate: 0
+  Turrentdata:
+    Turrent: {fileID: 0}
+    Moneycost: 0
+    TurrentUpdate: {fileID: 0}
+    MoneyUpdateCost: 0
+    type: 0
 --- !u!1001 &5228796519559746636
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -471,7 +471,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 96
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &4877034708766531243
 MonoBehaviour:
@@ -490,6 +490,7 @@ MonoBehaviour:
   timeRate: 1
   bullet: {fileID: 7885998836704118053, guid: 199c2f1109b4df341a208755b50b608b, type: 3}
   fireTransform: {fileID: 3949232794922710705}
+  isLaser: 0
 --- !u!1 &7988949092329002782
 GameObject:
   m_ObjectHideFlags: 0

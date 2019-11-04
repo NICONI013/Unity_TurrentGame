@@ -131,13 +131,13 @@ public class TurrentSpawner : MonoBehaviour
     {
         UpdateCanvas.SetActive(false);
     }
-    public void OnupdateTurrentBtn()
+    public void OnupdateTurrentBtn()//升级炮台操作
     {
        
         Destroy(mapcube.TurrentOn);
         mapcube.UpdateTurrent();
         CanvasHide();
-
+        OnMoneyChanged(CurrentTurrent.MoneyUpdateCost);
     }
     public void OnDestoryBtn()
     {
