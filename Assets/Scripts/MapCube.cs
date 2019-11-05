@@ -57,7 +57,7 @@ public class MapCube : MonoBehaviour
 
         if (Tuspr.CurrentTurrent.Turrent!=null)
         {
-            print(Tuspr.CurrentTurrent);
+            //print(Tuspr.CurrentTurrent);
             if (TurrentOn.gameObject == null && EventSystem.current.IsPointerOverGameObject() == false)
             {
 

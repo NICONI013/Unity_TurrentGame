@@ -13,11 +13,13 @@ public class Enemy : MonoBehaviour
     public GameObject EnemyDieParticle;
 
     private Slider sld;
+    public static bool gameOver = false;
     // Start is called before the first frame update
     void Start()
     {
         Targetpoint = Movecontrol.Targetpoint;
         sld = GetComponentInChildren<Slider>();
+        gameOver = false;
     }
 
     // Update is called once per frame
@@ -47,16 +49,18 @@ public class Enemy : MonoBehaviour
     }
     private void OnDestroy()//被击毁
     {
-        Spawner.EnemyAlive--;
+        EnemySpawner.EnemyAlive--;
     }
     void ReachDestiny()//到达目的地
     {
+        gameOver = true;
         Destroy(gameObject);
+        
     }
     public void TakeDamange(float damange)
     {
         HP -= damange;
-        print(HP+gameObject.name);
+        //print(HP+gameObject.name);
         if (HP<=0)
         {
             Die();
